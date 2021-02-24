@@ -40,7 +40,7 @@ public class MessageProducerService {
        // props.put("transactional.id", "my-transactional-id");
         props.put("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
         props.put("value.serializer", "com.sdk.producer.domain.BookEventSerializer");
-        Producer<String, String> producer = new KafkaProducer<>(props);
+       // Producer<String, String> producer = new KafkaProducer<>(props);
         return props;
     }
 
